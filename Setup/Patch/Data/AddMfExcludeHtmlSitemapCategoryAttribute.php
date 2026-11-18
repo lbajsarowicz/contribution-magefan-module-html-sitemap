@@ -69,6 +69,7 @@ class AddMfExcludeHtmlSitemapCategoryAttribute implements DataPatchInterface, Pa
         );
 
         $this->moduleDataSetup->getConnection()->endSetup();
+        return $this;
     }
 
     public function revert()
